@@ -1,38 +1,253 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+:root {
+  --goldenray: rgb(255,191,2);
+  --ashwhite: rgb(216, 205, 194);
+  --tangerineburn: rgba(255, 192, 2, 0.471);
+  --seafoam: #30e8bf;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: url('../src/assets/Brown-background.jpeg') no-repeat center fixed;
+  background-size: cover;
   min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--goldenray);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--ashwhite);
+} 
+
+main {
+  margin-left: 5rem;
+}
+
+/* Splash Screen and Animation */
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 200;
+}
+
+.splash img {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 150px;
+}
+
+.splash.disappear {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: -10;
+  transition: all 0.7s;
+}
+
+/* Navbar  */
+.navbar {
+  background-color: var(--tangerineburn);
+  position: fixed;
+  transition: width 200ms ease;
+}
+
+.navbar:hover {
+  width: 16rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+
+.navbar-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--seafoam);
+
+  text-decoration: none;
+}
+
+.nav-link svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.nav-link:hover {
+  background-color: rgba(228, 222, 222, 0.308);
+  color: var(--goldenray);
+  font-family: 'vonique64', 'Karantina', serif;
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.link-text {
+  font-family: 'vonique92', 'Karantina', serif;
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-icon {
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+  margin-left: 0.5em;
+  width: 4rem;
+}
+
+.nav-icon:hover {
+  filter: grayscale(0%) opacity(1);
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-Child {
+  Margin-top: auto;
+}
+
+#ca:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+/* Mobile and Small Screens Nav */
+ @media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-nav:hover {
+    margin-left: 2.5rem;
+  }
+
+  .nav-link:hover {
+    background-color: transparent;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  .nav-icon {
+    width: 2.5em;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .navbar:hover {
+    background-color: transparent;
+  }
+
+  .navbar:hover .link-text{
+    width: 100vw;
+    display: none;
+  }
+
+  .prof-pic {
+    width: 20rem;
+  }
+ }
+
+ /* Large Screens */
+ @media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover .link-text {
+    display: inline-block;
+    transition: opacity 600ms;
+  }
+}
+
+/* Animation */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Intro */
+.intro h1 {
+  color: rgb(255,191,2);
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'vonique92', 'Karantina', serif;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+.intro h3 {
+  font-size: 2em;
+  font-family: 'vonique64', 'Karantina', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(216, 205, 194);
+  padding-bottom: 15em;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* About */
