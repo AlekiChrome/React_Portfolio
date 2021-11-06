@@ -1,7 +1,12 @@
+import { Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import SplashScreen from './Components/SplashScreen';
+
+// Pages
 import Intro from './Pages/Intro';
 import About from './Pages/About';
+import aboutMePage from './Pages/aboutMePage';
+import Skills from './Pages/Skills';
 import './App.css';
 
 const App = () => {
@@ -11,6 +16,10 @@ const App = () => {
       <Navbar />
       <Intro />
       <About />
+      <Skills />
+      <Switch>
+        <Route path="/aboutmepage" component={aboutMePage} />
+      </Switch>
     </div>
   );
 }
