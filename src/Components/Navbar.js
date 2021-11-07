@@ -25,7 +25,7 @@ export default function Navbar() {
 
 
                 <li className="nav-item">
-                    <a href="#secTwoHeader" className="nav-link">
+                    <a href="#featuredwork" className="nav-link">
                         <img className="nav-icon" src={Featured} />
                             <span className="link-text">Featured Work</span></a></li>
 
