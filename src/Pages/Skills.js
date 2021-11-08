@@ -11,15 +11,17 @@ import firebase from '../assets/firebase.png';
 import photoshop from '../assets/PhotoShop.png';
 import indesign from '../assets/InDesign.png';
 import xd from '../assets/XD.png';
+import illustrator from '../assets/adobe-illustrator-cc-logo-png-transparent.png';
+import figma from '../assets/Figma.png';
 import canva from '../assets/Canva.png';
 
 export default function Skills() {
     return (
-        <>
+        <div className="skill-top" id="skillsheader">
             <h1 className="skills-header">Skills</h1>
             <div className="skillbox">
                 <div className="skill-container">
-                    <section className="skills" id="skillsheader">
+                    <section className="skills">
                         <h5>Front-End</h5>
                         <li>
                             <img src={htmlcss}/>
@@ -110,6 +112,20 @@ export default function Skills() {
                             </li>
 
                             <li>
+                                <img style={{width: '5em', paddingBottom: '1em'}} src={illustrator}/>
+                                <span className="bar">
+                                    <span className="illustrator"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <img style={{width: '10em'}} src={figma}/>
+                                <span className="bar">
+                                    <span className="figma"></span>
+                                </span>
+                            </li>
+
+                            <li>
                                 <img style={{width: '5em', paddingBottom: '1em'}} src={canva}/>
                                 <span className="bar">
                                     <span className="canva"></span>
@@ -118,6 +134,6 @@ export default function Skills() {
                         </section>
                     </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -20,9 +20,9 @@ const SmallCardImage = styled.img`
 
 export default function FeaturedWork() {
     return (
-        <main className="feat">
+        <main className="feat" id="featuredwork">
             <h3>Featured Work</h3>
-            <section className="featured-container" id="featuredwork">
+            <section className="featured-container">
 
                     <div className="grid">
                         <div className="grid-item">
@@ -36,8 +36,8 @@ export default function FeaturedWork() {
                                     <p className="card-text">
                                         Therapists of color for people of color.
                                     </p>
-                                    <button className="card-btn">github <span>&rarr;</span>
-
+                                    <button className="card-btn">
+                                        <a href="https://github.com/AlekiChrome/AKIN" target="_blank">More</a>
                                     </button>
                                 </div>
                             </div>
@@ -51,8 +51,8 @@ export default function FeaturedWork() {
                                     <p className="card-text">
                                         JavaScript Coffee Brand For Developers, By Developers
                                     </p>
-                                    <button className="card-btn">github <span>&rarr;</span>
-
+                                    <button className="card-btn">
+                                        <a href="https://github.com/bongster91/coffee-project" target="_blank">More</a>
                                     </button>
                                 </div>
                             </div>
@@ -66,8 +66,8 @@ export default function FeaturedWork() {
                                     <p className="card-text">
                                         An anime search tool that takes you to the details on the choosen show.
                                     </p>
-                                    <button className="card-btn">github <span>&rarr;</span>
-
+                                    <button className="card-btn">
+                                        <a href="https://github.com/AlekiChrome/AnimeIndex" target="_blank">More</a>
                                     </button>
                                 </div>
                             </div>

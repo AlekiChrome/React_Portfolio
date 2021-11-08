@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0; 
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -178,6 +179,7 @@ main {
 /* About */
 #aboutTop {
   font-family: 'vonique92', 'Karantina', serif;
+  font-size: 4em;
   word-spacing: 1rem;
   color: var(--ashwhite);
   text-decoration: overline;
@@ -216,12 +218,40 @@ main {
   margin-right: 2em; */
 }
 
+.about-description .about-btn {
+  border: none;
+  border-radius: 0.8em;
+  font-family: 'vonique92', 'Karantina', serif;
+  font-size: 1em;
+  width: 16vw;
+  height: 4vh;
+  margin-left: 18px;
+  background: var(--tangerineburn);
+  color: var(--ashes);
+}
+
+.about-description .about-btn:hover {
+  font-family: 'vonique64', 'Karantina', serif;
+  background-color: var(--ashes);
+  color: var(--seafoam);
+  cursor: pointer;
+}
+
+.about-description a {
+  text-decoration: none;
+}
+
+.about-description a:visited {
+  color: var(--seafoam);
+} 
+
+
 /* Skills */
 .skills-header {
   font-family: 'vonique92', 'Karantina', serif;
   color: var(--ashwhite);
   margin-top: 6em;
-  font-size: 2em;
+  font-size: 4em;
   text-decoration: overline;
 }
 
@@ -402,6 +432,16 @@ main {
   animation: xd 2s;
 }
 
+.illustrator {
+  width: 50%;
+  animation: illustrator 2s;
+}
+
+.figma {
+  width: 66%;
+  animation: figma 2s;
+}
+
 .canva {
   width: 70%;
   animation: canva 2s;
@@ -434,6 +474,24 @@ main {
   }
 }
 
+@keyframes illustrator {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 66%;
+  }
+}
+
 @keyframes canva {
   0% {
     width: 0%;
@@ -446,9 +504,10 @@ main {
 /* Featured Work */
 .feat h3 {
   font-family: 'vonique92', 'Karantina', serif;
-  font-size: 2em;
+  font-size: 4em;
   color: var(--ashwhite);
   text-decoration: overline;
+  padding-top: 4em;
   padding-bottom: 2em;
 }
 
@@ -535,12 +594,151 @@ main {
 
 .card-btn:hover, .card-btn:active {
   background-color: var(--ashes);
-  color: var(--seafoam);
+  color: var(--ashwhite);
 }
 
 .card-btn:hover span, card-btn:active span {
   margin-left: 1.5rem;
 }
+
+
+.card-btn a {
+  text-decoration: none;
+}
+
+.card-btn a:visited {
+  background-color: var(--ashes);
+  color: var(--seafoam);
+}
+
+/* Design */
+
+.design-container {
+  display: inline-block;
+  margin-top: 8rem;
+}
+
+.design h4 {
+  font-family: 'vonique92', 'Karantina', serif;
+  font-size: 4em;
+  text-decoration: overline;
+  color: var(--ashwhite);
+  padding-top: 6em;
+  padding-bottom: 2em;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.box {
+  background-color: var(--ashwhite);
+  width: 300px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  /* position: absolute; */
+  margin-left: 16rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.slide-img {
+  height: 450px;
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: 'vonique92', 'Karantina', serif;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+}
+
+.type a {
+  color: var(--ashes);
+  margin: 5px 0px;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+.text span {
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.more {
+  color: var(--ashes);
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100.5%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 184, 51, 0.562);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DevAdd {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(216, 205, 194);
+  color: var(--ashes);
+  letter-spacing: 1px;
+  font-family: 'vonique64', 'Karantina', serif;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.DevAdd:hover {
+  color: var(--seafoam);
+  background-color: var(--ashes);
+  transition: all ease 0.3s;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
 
 
 

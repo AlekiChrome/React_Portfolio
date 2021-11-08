@@ -8,6 +8,7 @@ import About from './Pages/About';
 import aboutMePage from './Pages/aboutMePage';
 import Skills from './Pages/Skills';
 import FeaturedWork from './Pages/FeaturedWork';
+import Design from './Pages/Design';
 import './App.css';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <About />
       <Skills />
       <FeaturedWork />
+      <Design />
       <Switch>
         <Route path="/aboutmepage" component={aboutMePage} />
       </Switch>

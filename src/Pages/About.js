@@ -1,5 +1,10 @@
 import { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
+// Pages
+import aboutMePage from '../Pages/aboutMePage';
+
+// Images and Icons
 import candyAboutSvg from '../assets/CandyL.svg';
 import instagram from '../assets/Instagram.svg';
 import twitch from '../assets/Twitch.svg';
@@ -10,8 +15,8 @@ export default function About() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     return (
-        <>
-            <h1 className="about-header" id="aboutTop">About Myself</h1>
+        <div className="about-container">
+            <h4 className="about-header" id="aboutTop">About Myself</h4>
 
             <div className="socials">
                     <div>
@@ -38,9 +43,11 @@ export default function About() {
                     </div>
 
                     <div className="about-description">
-                        <button className="about-btn">Learn More About Me</button>
+                        <button className="about-btn">
+                            <a href="/aboutMePage">Learn More About Me</a>
+                        </button>
                     </div>
                 </section>
-        </>
+        </div>
     )
 }
