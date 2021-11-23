@@ -9,6 +9,7 @@ import aboutMePage from './Pages/aboutMePage';
 import Skills from './Pages/Skills';
 import FeaturedWork from './Pages/FeaturedWork';
 import Design from './Pages/Design';
+import Contact from './Pages/Contact';
 import './App.css';
 
 const App = () => {

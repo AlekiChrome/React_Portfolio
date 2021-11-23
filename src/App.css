@@ -179,7 +179,7 @@ main {
 /* About */
 #aboutTop {
   font-family: 'vonique92', 'Karantina', serif;
-  font-size: 4em;
+  font-size: 2em;
   word-spacing: 1rem;
   color: var(--ashwhite);
   text-decoration: overline;
@@ -251,7 +251,7 @@ main {
   font-family: 'vonique92', 'Karantina', serif;
   color: var(--ashwhite);
   margin-top: 6em;
-  font-size: 4em;
+  font-size: 2em;
   text-decoration: overline;
 }
 
@@ -504,7 +504,7 @@ main {
 /* Featured Work */
 .feat h3 {
   font-family: 'vonique92', 'Karantina', serif;
-  font-size: 4em;
+  font-size: 2em;
   color: var(--ashwhite);
   text-decoration: overline;
   padding-top: 4em;
@@ -620,7 +620,7 @@ main {
 
 .design h4 {
   font-family: 'vonique92', 'Karantina', serif;
-  font-size: 4em;
+  font-size: 2em;
   text-decoration: overline;
   color: var(--ashwhite);
   padding-top: 6em;
@@ -632,15 +632,21 @@ main {
 }
 
 .box {
+  display: block;
   background-color: var(--ashwhite);
   width: 300px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
   /* position: absolute; */
+  margin: 1em;
   margin-left: 16rem;
   left: 50%;
   transform: translate(-50%);
+}
+
+.item-a {
+  list-style: none;
 }
 
 .slide-img {

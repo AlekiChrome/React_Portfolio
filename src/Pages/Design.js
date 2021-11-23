@@ -23,10 +23,10 @@ export default function design() {
                     </div>
                     <div className="detail-box">
                         <div className="type">
-                            <a href="#">Deck</a>
+                            <a href="https://github.com/Dev-Addicters/Augmented-Reality/blob/main/README.md" target="_blank">github</a>
                             <span></span>
                         </div>
-                        <a href="https://www.flipsnack.com/devaddicters/devaddicters.html" className="more">More</a>
+                        <a href="https://www.flipsnack.com/devaddicters/devaddicters.html" className="more" target="_blank">More</a>
                     </div>
                 </div>
             </li>
@@ -41,10 +41,10 @@ export default function design() {
                     </div>
                     <div className="detail-box">
                         <div className="type">
-                            <a href="#">Deck</a>
+                            <a href="https://docs.google.com/presentation/d/1r8QfOQIGGLwI2zb-lZqEKoAOd1EuyPU5C1NNGPIcELs/edit?usp=present" target="_blank">Deck</a>
                             <span></span>
                         </div>
-                        <a href="https://www.flipsnack.com/devaddicters/devaddicters.html" className="more">More</a>
+                        <a href="#" className="more" target="_blank">More</a>
                     </div>
                 </div>
             </li>
