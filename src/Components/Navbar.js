@@ -35,7 +35,7 @@ export default function Navbar() {
                             <span className="link-text">Design</span></a></li>
 
                 <li className="nav-item">
-                    <a href="https://drive.google.com/file/d/1CvXNpI68CKbo5Q8yjkF1_qtTP90Wf-j4/view?usp=sharing" target="_blank" className="nav-link">
+                    <a href="https://docs.google.com/document/d/1U3yUMCnNSn8gK2LK5Lcpqf6yg-UA8GUApWksuD4jlMY/edit?usp=sharing" target="_blank" className="nav-link">
                         <img className="nav-icon" src={Resume} />
                             <span className="link-text">Resume</span></a></li>
 
