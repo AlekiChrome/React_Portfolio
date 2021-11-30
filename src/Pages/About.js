@@ -44,7 +44,7 @@ export default function About() {
 
                     <div className="about-description">
                         <button className="about-btn">
-                            <a href="/aboutMePage">Learn More About Me</a>
+                            <a href="/aboutMePage">More</a>
                         </button>
                     </div>
                 </section>

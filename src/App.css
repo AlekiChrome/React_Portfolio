@@ -73,6 +73,7 @@ main {
 .navbar {
   background-color: var(--tangerineburn);
   position: fixed;
+  z-index: 1;
   transition: width 200ms ease;
 }
 
@@ -614,8 +615,11 @@ main {
 /* Design */
 
 .design-container {
-  display: inline-block;
-  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
 }
 
 .design h4 {
@@ -633,6 +637,8 @@ main {
 
 .box {
   display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
   background-color: var(--ashwhite);
   width: 300px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
@@ -640,10 +646,11 @@ main {
   overflow: hidden;
   /* position: absolute; */
   margin: 1em;
-  margin-left: 16rem;
+  /* margin-left: 16rem; */
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-5%);
 }
+
 
 .item-a {
   list-style: none;
@@ -651,6 +658,7 @@ main {
 
 .slide-img {
   height: 450px;
+
 }
 
 .slide-img img {
@@ -672,7 +680,8 @@ main {
 
 .type {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .type a {
@@ -698,6 +707,7 @@ main {
   height: 100%;
   background-color: rgba(255, 184, 51, 0.562);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -739,12 +749,6 @@ main {
     opacity: 1;
   }
 }
-
-
-
-
-
-
 
 
 
