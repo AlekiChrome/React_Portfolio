@@ -52,7 +52,7 @@ export default function FeaturedWork() {
                                         JavaScript Coffee Brand For Developers, By Developers
                                     </p>
                                     <button className="card-btn">
-                                        <a href="https://github.com/bongster91/coffee-project" target="_blank">More</a>
+                                        <a href="https://quizzical-yonath-00eaa3.netlify.app/" target="_blank">More</a>
                                     </button>
                                 </div>
                             </div>
