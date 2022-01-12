@@ -42,7 +42,7 @@ export default function About() {
                         <img className="prof-pic" src={candyAboutSvg} alt=""></img>
                     </div>
 
-                    <div className="about-summary">
+                    {/* <div className="about-summary">
                         <p>
                             New York based software engineer. 
                         <p>
@@ -52,7 +52,7 @@ export default function About() {
                             I am constantly working to improve my work so it reflects 
                             <p>creativity, innovation and forward thinking</p>
                         </p>
-                    </div>
+                    </div> */}
 
                     <div className="about-description">
                         <button className="about-btn">

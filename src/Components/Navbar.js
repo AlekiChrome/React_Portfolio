@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../App.scss';
 import Female from '../assets/Untitled design.svg';
 import Skills from '../assets/Skills.svg';
 import Featured from '../assets/Featured.svg';
