@@ -6,10 +6,6 @@
 
 $hover-font: 'Comforter Brush', cursive;
 
-/* cursor */
-
-
-
 :root {
   --goldenray: rgb(255,191,2);
   --ashwhite: rgb(216, 205, 194);
@@ -17,7 +13,6 @@ $hover-font: 'Comforter Brush', cursive;
   --seafoam: #30e8bf;
   --ashes: rgb(48, 44, 44);
 }
-
 
 .App {
   text-align: center;
@@ -888,6 +883,7 @@ main {
 
 /* Small Screens */
 @media (max-width: 576px) {
+
  .skills {
   width: 200px;
  }
@@ -895,5 +891,25 @@ main {
  .splash img{
    width: 100vw;
  }
+
+ .intro {
+  width: 100vw;
+ }
+
+ .intro h1 {
+   font-family: $hover-font;
+   font-size: 6em;
+ }
+
+ .intro h2 {
+   background: none;
+   font-size: 4em;
+ }
+
+ .feat {
+   display: block;
+ }
+
+ 
 }
 

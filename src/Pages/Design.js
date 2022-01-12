@@ -18,7 +18,7 @@ export default function design() {
                     <div className="slide-img">
                         <img src={devaddicters} />
                         <div className="overlay">
-                            <a href="#" className="DevAdd">DEVADDICTERS</a>
+                            <a href="#" className="DevAdd">Devaddicters</a>
                         </div>
                     </div>
                     <div className="detail-box">

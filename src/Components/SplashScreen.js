@@ -4,11 +4,11 @@ import App from '../App';
 // import '../App.scss';
 
 export default function SplashScreen() {
-    const [splashDisplay, setSplashDisplay] = useState(false); 
+    const [splashDisplay, setSplashDisplay] = useState(true); 
 
     
     useEffect(() => {
-        setSplashDisplay(true);
+        // setSplashDisplay(true);
         setTimeout(() => {
             setSplashDisplay(false)
         }, 4000);
