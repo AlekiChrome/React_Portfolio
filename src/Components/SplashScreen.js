@@ -5,18 +5,18 @@ import App from '../App';
 export default function SplashScreen() {
     const [splashDisplay, setSplashDisplay] = useState(false); 
 
+    // DEBUG:
     useEffect(() => {
         setSplashDisplay(true);
         setTimeout(() => {
             setSplashDisplay(false)
         }, 3500);
-    })
+    }, [])
 
 
     return (
-        <div className="splash">
-            { splashDisplay ? <img className="appear" src={splash} /> : App}
-            
+        <div>
+            { splashDisplay ? <div className='splash'><img className="appear" src={splash} /></div> : App }
         </div>
     )
 }

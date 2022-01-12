@@ -42,6 +42,18 @@ export default function About() {
                         <img className="prof-pic" src={candyAboutSvg} alt=""></img>
                     </div>
 
+                    <div className="about-summary">
+                        <p>
+                            New York based software engineer. 
+                        <p>
+                            (with a passion for the arts and humanitarian efforts)
+
+                        </p>
+                            I am constantly working to improve my work so it reflects 
+                            <p>creativity, innovation and forward thinking</p>
+                        </p>
+                    </div>
+
                     <div className="about-description">
                         <button className="about-btn">
                             <a href="/aboutMePage">More</a>
