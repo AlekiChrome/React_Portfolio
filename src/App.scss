@@ -158,10 +158,14 @@ main {
 }
 
 /* Intro */
+.intro {
+  width: 100%;
+}
+
 .intro h1 {
   color: rgb(255,191,2);
   font-weight: bold;
-  font-size: 8em;
+  font-size: 7em;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 10px;
   // font-family: 'vonique92', 'Karantina', serif;
