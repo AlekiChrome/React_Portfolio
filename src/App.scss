@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+/* cursor */
+
+
+
 :root {
   --goldenray: rgb(255,191,2);
   --ashwhite: rgb(216, 205, 194);
@@ -40,6 +44,10 @@ main {
 }
 
 /* Splash Screen and Animation */
+.splash-container {
+  width: 100vw;
+}
+
 .splash {
   position: fixed;
   top: 0;
@@ -868,6 +876,10 @@ main {
 @media (max-width: 576px) {
  .skills {
   width: 200px;
+ }
+
+ .splash img{
+   width: 100vw;
  }
 }
 
