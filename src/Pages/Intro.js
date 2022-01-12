@@ -8,7 +8,7 @@ export default function Intro() {
     return (
         <main className="intro" id="intro">
             <h1>Candice </h1>
-            <h2>A. Agard <img className="candyAndKari" src={emote} /></h2>
+            <h2>A. Agard</h2>
             <h3>Software Developer <h6 style={{'color': '#FFBF04'}}> & Lover of puppies</h6></h3>
 
         </main>

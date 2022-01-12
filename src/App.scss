@@ -4,6 +4,8 @@
   scroll-behavior: smooth;
 }
 
+$hover-font: 'Comforter Brush', cursive;
+
 /* cursor */
 
 
@@ -123,13 +125,16 @@ main {
 .nav-link:hover {
   background-color: rgba(228, 222, 222, 0.308);
   color: var(--goldenray);
+  // font-family: $hover-font;
   font-family: 'vonique64', 'Karantina', serif;
   font-weight: bold;
   transition: 200ms;
 }
 
 .nav-link .link-text:hover {
-  font-family: 'vonique64', 'Karantina', serif;
+  font-family: $hover-font;
+  font-size: 30px;
+  // font-family: 'vonique64', 'Karantina', serif;
 }
 
 .link-text {
@@ -171,12 +176,14 @@ main {
 }
 
 .intro h1 {
+  display: flex;
   color: rgb(255,191,2);
   font-weight: bold;
   font-size: 7em;
-  font-family: 'Bebas Neue', cursive;
-  letter-spacing: 10px;
+  font-family: 'Comforter Brush', cursive;
+  // font-family: 'Bebas Neue', cursive;
   // font-family: 'vonique92', 'Karantina', serif;
+  letter-spacing: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -190,7 +197,8 @@ main {
   border: 1px solid rgb(255,191,2);
   background-color: var(--goldenray);
   flex-wrap: wrap;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Comforter Brush', cursive;
+  // font-family: 'Bebas Neue', cursive;
   letter-spacing: 5px;
   font-size: 6em;
 }
@@ -262,7 +270,9 @@ main {
 }
 
 .about-description .about-btn:hover {
-  font-family: 'vonique64', 'Karantina', serif;
+  font-family: $hover-font;
+  font-size: 30px;
+  // font-family: 'vonique64', 'Karantina', serif;
   background-color: var(--ashes);
   color: var(--seafoam);
   cursor: pointer;
@@ -624,6 +634,8 @@ main {
 }
 
 .card-btn:hover, .card-btn:active {
+  font-family: $hover-font;
+  font-size: 30px;
   background-color: var(--ashes);
   color: var(--ashwhite);
 }
@@ -757,6 +769,8 @@ main {
 }
 
 .DevAdd:hover {
+  font-family: $hover-font;
+  font-size: 30px;
   color: var(--seafoam);
   background-color: var(--ashes);
   transition: all ease 0.3s;
