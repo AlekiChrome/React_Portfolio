@@ -16,7 +16,7 @@ export default function SplashScreen() {
 
     return (
         <div>
-            { splashDisplay ? <div className='splash'><img className="appear" src={splash} /></div> : App }
+            { splashDisplay ? <div className='splash fade-out'><img className="appear" src={splash} /></div> : App }
         </div>
     )
 }

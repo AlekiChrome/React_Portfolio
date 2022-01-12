@@ -57,6 +57,20 @@ main {
   padding-top: 150px;
 }
 
+.fade-out {
+  animation: fadeOut 5s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 /* .splash .disappear {
   position: fixed;
   opacity: 0;
